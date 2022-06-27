@@ -1,3 +1,99 @@
+:root {
+  --main-color: #10cab7;
+  --dark-color: #2c4755;
+  --light-color: #848484;
+  --bg-light: #ebeced;
+}
+
+.dark-text {
+  color: var(--dark-color);
+}
+.light-text {
+  color: var(--light-color);
+}
+.main-text {
+  color: var(--main-color);
+}
+
+.dark-bg {
+  background-color: var(--dark-color);
+}
+.light-bg {
+  background-color: var(--bg-light);
+}
+.main-bg {
+  background-color: var(--main-color);
+}
+
 body {
   font-family: 'Work Sans', sans-serif !important;
+  background-color: #f6f6f6;
+}
+
+nav{
+  background-color: white;
+}
+
+nav .container{
+  height: 72px;
+}
+
+nav .container .logo {
+  height: 50px;
+}
+
+nav .container .menu-content {
+  top: 72px !important;
+  width: 250px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+nav .container .menu-content::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 9px;
+  border: 10px solid;
+  border-color: transparent transparent var(--dark-color) transparent;
+}
+
+nav .container .menu-content i,nav .container .menu-content svg {
+  font-size: 25px;
+  padding: 5px !important;
+  color: white;
+  cursor: pointer;
+}
+
+nav .container .menu-content ul li {
+  position: relative;
+}
+
+nav .container .menu-content ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to left,var(--dark-color),var(--main-color),var(--dark-color));
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+nav .container .menu-content ul li:hover::before {
+  width: 100%;
+}
+
+
+@media (max-width:960px) {
+  nav .container .menu-content {
+    width: 100%;
+  }
 }
