@@ -35,7 +35,8 @@
 </head>
 
 <body>
-  <nav>
+  <!-- start Nav -->
+  <nav class="sticky-top">
     <div class="container position-relative d-flex justify-content-between align-items-center">
       <img src="./asset/images/logo.png" alt="Logo" class="logo">
       <span id="menuToggle">
@@ -43,14 +44,58 @@
       </span>
       <div class="menu-content d-none dark-bg position-absolute end-0">
         <ul class="list-unstyled m-3 d-flex flex-column gap-3">
-          <li><a class="text-decoration-none text-white" href="#Home">Home</a></li>
-          <li><a class="text-decoration-none text-white" href="#Services">Services</a></li>
-          <li><a class="text-decoration-none text-white" href="#Portfolio">Portfolio</a></li>
-          <li><a class="text-decoration-none text-white" href="#About">About</a></li>
+          <li><a class="text-decoration-none text-white" href="#home">Home</a></li>
+          <li><a class="text-decoration-none text-white" href="#services">Services</a></li>
+          <li><a class="text-decoration-none text-white" href="#portfolio">Portfolio</a></li>
+          <li><a class="text-decoration-none text-white" href="#about">About</a></li>
+          <li><a class="text-decoration-none text-white" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- end Nav -->
+  <!-- start landing -->
+  <section class="landing h-landing light-bg" id="home">
+    <div class="container h-landing d-flex flex-column justify-content-center gap-3 align-items-center">
+      <h1 class="main-text fw-bold">Hello There!</h1>
+      <p class="dark-text text-center">We are Leon - Super Creative & Minimal Agency Web Template</p>
+    </div>
+  </section>
+  <!-- end landing -->
+  <!-- start Feature -->
+  <section class="feature">
+    <div class="container d-flex gap-5 justify-content-center text-center align-items-center py-3 flex-wrap">
+      <div class="feature-item">
+        <div class="icon main-text">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <h5 class="dark-text fw-bold">Tell Us Your Idea</h5>
+        <p class="light-text">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor
+        incididunt ut lab</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon main-text">
+          <i class="fa-solid fa-vial"></i>
+        </div>
+        <h5 class="dark-text fw-bold">We Will Do All The WOrk</h5>
+        <p class="light-text">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor
+        incididunt ut lab</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon main-text">
+          <i class="fa-solid fa-earth-africa"></i>
+        </div>
+        <h5 class="dark-text fw-bold">Your Product is Worldwide</h5>
+        <p class="light-text">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor
+        incididunt ut lab</p>
+      </div>
+    </div>
+  </section>
+  <!-- end Feature -->
+
 </body>
 
 </html>
