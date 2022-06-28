@@ -201,3 +201,11 @@ nav .container .menu-content ul li:hover::before {
   background-color: #fafafa;
 }
 /* end portfolio */
+/* start about */
+.horizontal-line {
+  display: block;
+  width: 50% !important;
+  height: 2px !important;
+  background-color: var(--main-color);
+}
+/* end about */
